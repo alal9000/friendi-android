@@ -5,7 +5,7 @@ import com.example.friendi.network.AmphibianApiService
 
 
 /**
- * Repository that fetch Amphibian data list from amphibiansApi.
+ * Repository that fetch Amphibian data list from amphibiansApi. Purpose is the App data store.
  */
 interface FriendiRepository {
     /** Fetches list of Amphibians from amphibiansApi */
