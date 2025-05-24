@@ -26,7 +26,7 @@ sealed interface FriendiUiState {
 // this class will actually provide the viewmodel object that will be used to provide the UI state throughout the app
 class FriendiViewModel(private val friendiRepository: FriendiRepository) : ViewModel() {
 
-    /** The mutable State that stores the status of the most recent request */
+    /** The main state object. A mutable State that stores the status of the most recent request */
     var friendiUiState: FriendiUiState by mutableStateOf(FriendiUiState.Loading)
         private set
 

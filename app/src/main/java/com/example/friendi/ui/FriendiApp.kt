@@ -29,8 +29,10 @@ fun FriendiApp() {
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
+            // create instance of the viewmodel
             val friendiViewModel: FriendiViewModel =
                 viewModel(factory = FriendiViewModel.Factory)
+
                 HomeScreen(
                     friendiUiState = friendiViewModel.friendiUiState,
                     contentPadding = paddingValues
