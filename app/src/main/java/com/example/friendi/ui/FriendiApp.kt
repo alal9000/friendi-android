@@ -25,7 +25,7 @@ fun FriendiApp() {
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = { FriendiTopAppBar(scrollBehavior = scrollBehavior)}
-    ) {
+    ) { paddingValues ->
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
@@ -33,7 +33,7 @@ fun FriendiApp() {
                 viewModel(factory = FriendiViewModel.Factory)
                 HomeScreen(
                     friendiUiState = friendiViewModel.friendiUiState,
-                    contentPadding = it
+                    contentPadding = paddingValues
                 )
         }
 
