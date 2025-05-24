@@ -26,6 +26,7 @@ import com.example.friendi.model.Amphibian
 
 @Composable
 fun HomeScreen(
+    friendiUiState: FriendiUiState,
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(0.dp),
 ) {
