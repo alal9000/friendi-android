@@ -18,6 +18,7 @@ import com.example.friendi.ui.screens.FriendiViewModel
 import com.example.friendi.ui.screens.HomeScreen
 
 
+// this is the root of the app
 @Composable
 fun FriendiApp() {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()

@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import com.example.friendi.R
 import com.example.friendi.model.Amphibian
 
+// this is the main screen of the app
 @Composable
 fun HomeScreen(
     friendiUiState: FriendiUiState,
